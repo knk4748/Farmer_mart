@@ -1,7 +1,10 @@
 import 'package:farmer_mart/AppModel.dart';
+import 'package:farmer_mart/BorrowPage.dart';
+import 'package:farmer_mart/Sell.dart';
 import 'package:flutter/material.dart';
 
 import 'BuyPage.dart';
+import 'Lend.dart';
 
 class ChooseAction extends StatefulWidget {
   @override
@@ -136,6 +139,18 @@ class _ChooseActionState extends State<ChooseAction> {
                 onPressed: () {
                   if(isBuy){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=> BuyPage(),),);
+                  }
+                  if(isSell){
+                     Navigator.push(
+            context, MaterialPageRoute(builder: (context) => UploadPage()));
+                  }
+                  if(isLend){
+                     Navigator.push(
+            context, MaterialPageRoute(builder: (context) => LendPage()));
+                  }
+                  if(isBorrow){
+                     Navigator.push(
+            context, MaterialPageRoute(builder: (context) => BorrowPage()));
                   }
                 },
               )

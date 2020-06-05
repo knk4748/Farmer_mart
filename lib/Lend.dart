@@ -1,3 +1,4 @@
+import 'package:farmer_mart/ThankYou.dart';
 import 'package:flutter/material.dart';
 
 import 'AppModel.dart';
@@ -59,7 +60,8 @@ class _LendPageState extends State<LendPage> {
             ),
             onTap: () {
               
-       // TODO add navigator push to next page
+       Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ThankYou())); 
             },
           )
           ],

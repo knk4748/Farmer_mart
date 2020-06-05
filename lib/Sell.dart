@@ -1,5 +1,6 @@
 
 import 'package:farmer_mart/AppModel.dart';
+import 'package:farmer_mart/ThankYou.dart';
 import 'package:flutter/material.dart';
 
 //TODO recheck
@@ -61,9 +62,9 @@ class _UploadPageState extends State<UploadPage> {
               ),
             ),
             onTap: () {
-              
+           Navigator.push(
+            context, MaterialPageRoute(builder: (context) => ThankYou()));    
             },
-            //TODO add navigator push to next page
           )
           ],
         ),

@@ -1,6 +1,6 @@
 import 'package:farmer_mart/AppModel.dart';
+import 'package:farmer_mart/actionChoosing.dart';
 import 'package:flutter/material.dart';
-import 'LoginPage.dart';
 
 class SelectLanguage extends StatefulWidget {
   @override
@@ -17,7 +17,7 @@ class _SelectLanguageState extends State<SelectLanguage> {
     if (langBool2 || langBool3 || langBool1) {
       if (langBool1 == true) {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => LoginPage()));
+            context, MaterialPageRoute(builder: (context) => ChooseAction()));
       } else {
         // return AlertDialog(content: Text("App is only in English for now"),);
       }

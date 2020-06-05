@@ -1,4 +1,5 @@
 import 'package:farmer_mart/AppModel.dart';
+import 'package:farmer_mart/actionChoosing.dart';
 import 'package:flutter/material.dart';
 
 class ThankYou extends StatefulWidget {
@@ -13,16 +14,21 @@ class _ThankYouState extends State<ThankYou> {
       backgroundColor: colorForBackground,
       appBar: commonAppBar("Logo"),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Text(
-            "Thank You!",
-            style: TextStyle(fontSize: 44),
+          Center(
+            child: Text(
+              "Thank You!",
+              style: TextStyle(fontSize: 44),
+            ),
           ),
           RaisedButton(
               color: buttonColor,
-              child: buttonContainer("SAVE", context),
+              child: buttonContainer("Home", context),
               onPressed: () {
-                // TODO go to home
+                 Navigator.push(
+            context, MaterialPageRoute(builder: (context) => ChooseAction()));
               },
             )
         ],

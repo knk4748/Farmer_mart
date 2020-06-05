@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'AppModel.dart';
-
+//TODO correct this dead end
 
 class BorrowPage extends StatefulWidget {
   @override
@@ -44,7 +44,7 @@ class _BorrowPageState extends State<BorrowPage> {
             ),
             SizedBox(height:height*.05),
             GestureDetector(onTap: null,
-            //TODO fill up to item buy page and doublr container 
+         
                           child: Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -77,7 +77,7 @@ class _BorrowPageState extends State<BorrowPage> {
 SizedBox(height:height*.05),
 
              GestureDetector(onTap: null,
-            //TODO fill up to item buy page and doublr container 
+           
                           child: Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,

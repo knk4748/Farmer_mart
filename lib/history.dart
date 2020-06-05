@@ -28,7 +28,6 @@ class _HistoryState extends State<History> {
             SizedBox(height: height * .1),
             GestureDetector(
               onTap: null,
-              //TODO fill up to item buy page and doublr container
               child: Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -75,7 +74,7 @@ class _HistoryState extends State<History> {
             SizedBox(height:30),
             GestureDetector(
               onTap: null,
-              //TODO fill up to item buy page and doublr container
+             
               child: Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,

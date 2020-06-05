@@ -1,4 +1,5 @@
 import 'package:farmer_mart/AppModel.dart';
+import 'package:farmer_mart/SelectLanguage.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -72,9 +73,10 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             onTap: () {
-              
+               Navigator.push(
+            context, MaterialPageRoute(builder: (context) => SelectLanguage()));
             },
-            //TODO add navigator push to next page
+           
           )
         ],
       ),

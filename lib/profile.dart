@@ -1,5 +1,6 @@
 
 
+import 'package:farmer_mart/actionChoosing.dart';
 import 'package:flutter/material.dart';
 import 'AppModel.dart';
 import 'SelectLanguage.dart';
@@ -105,7 +106,8 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
             ),
             onTap: () {
-// TODO Return to home
+Navigator.push(context,
+                  MaterialPageRoute(builder: (context) =>ChooseAction()));
             },
             
           )

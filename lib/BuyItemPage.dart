@@ -31,8 +31,8 @@ class _BuyItemPageState extends State<BuyItemPage> {
             // SizedBox(height: 20),
             SizedBox(height: height * .04),
             GestureDetector(
-              onTap: null,
-              //TODO fill up to item buy page and double container
+              
+              
               child: Container(
                   child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
