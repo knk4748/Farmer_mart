@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 import 'AppModel.dart';
 import 'SelectLanguage.dart';
@@ -65,6 +67,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
             ),
           ),
+          SizedBox(height:20),
           GestureDetector(
             onTap: () => Navigator.push(
               context,
@@ -72,13 +75,16 @@ class _ProfilePageState extends State<ProfilePage> {
                 builder: (context) => SelectLanguage(),
               ),
             ),
-            child: Container(
-              margin: EdgeInsets.only(left: 13, top: 20),
-              child: Text(
-                "Contact",
-                style: TextStyle(
-                  fontSize: 42,
-                  fontWeight: FontWeight.w300,
+            child: GestureDetector(
+              onTap:()=> Navigator.push(context,MaterialPageRoute(builder: (context)=>SelectLanguage(),),),
+                          child: Container(
+                margin: EdgeInsets.only(left: 13, top: 20),
+                child: Text(
+                  "Select Language",
+                  style: TextStyle(
+                    fontSize: 42,
+                    fontWeight: FontWeight.w300,
+                  ),
                 ),
               ),
             ),
@@ -93,13 +99,15 @@ class _ProfilePageState extends State<ProfilePage> {
               padding: EdgeInsets.all(10),
               child: Center(
                 child: Text(
-                  "Sumbit",
+                  "Save",
                   style: TextStyle(color: Colors.white, fontSize: 30),
                 ),
               ),
             ),
-            onTap: () {},
-            //TODO add navigator push to next page
+            onTap: () {
+// TODO Return to home
+            },
+            
           )
         ],
       ),

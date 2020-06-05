@@ -1,13 +1,16 @@
+
+import 'package:farmer_mart/AppModel.dart';
 import 'package:flutter/material.dart';
 
-import 'AppModel.dart';
+//TODO recheck
+class UploadPage extends StatefulWidget {
+  UploadPage({Key key}) : super(key: key);
 
-class LendPage extends StatefulWidget {
   @override
-  _LendPageState createState() => _LendPageState();
+  _UploadPageState createState() => _UploadPageState();
 }
 
-class _LendPageState extends State<LendPage> {
+class _UploadPageState extends State<UploadPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +24,7 @@ class _LendPageState extends State<LendPage> {
             SizedBox(height: 20),
             Center(
               child: Text(
-                "Lend",
+                "Sell",
                 style: blackBold(),
               ),
             ),
@@ -59,8 +62,8 @@ class _LendPageState extends State<LendPage> {
             ),
             onTap: () {
               
-       // TODO add navigator push to next page
             },
+            //TODO add navigator push to next page
           )
           ],
         ),

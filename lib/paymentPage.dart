@@ -3,7 +3,6 @@
 import 'package:farmer_mart/AppModel.dart';
 import 'package:flutter/material.dart';
 
-import 'LoginPage.dart';
 import 'ThankYou.dart';
 
 class PaymentPage extends StatefulWidget {
